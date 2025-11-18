@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 4 Assignment</title>
     <style>
-        body { background-color: #f0f7ff; color: #1e3a8a; border-color: #64748b;}
+        body { background-color: #0f172a; color: #f1f5f9;}
         .input-group { display: flex; flex-direction: column; width: full; gap: 3px; }
+        .radio-group { display: flex; flex-direction: row; width: full; gap: 3px; align-items: center; justify-items: start; }
         .container { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
-        form { display: flex; flex-direction: column; gap: 5px; height: 100%; width: 50%; }
-        input  { padding: 3px; background-color: #ffffff; }
+        form { display: flex; flex-direction: column; gap: 10px; height: 100%; width: 50%; }
+        input  { padding: 3px; padding-inline: 10px; background-color: #374e65; border: none; border-radius: 5px; height: 22px; }
+        input::placeholder { color: #94a3b8; opacity: 1; }
     </style>
   </head>
   <body>
@@ -40,20 +42,36 @@
         </div>
 
         <div class="input-group">
-          <label for="input">Gender :</label>
-          <div>
-            <label for="input"
-              >Male<input type="radio" name="male" id="5"
-            /></label>
-            <label for="input"
-              >Female<input type="radio" name="female" id="6"
-            /></label>
-          </div>
+        <label for="input">Gender :</label>
+        <div >
+            <label style="display: flex; align-items: center;">Male<input type="radio" name="gender" value="male" id="5"/></label>
+            <label style="display: flex; align-items: center;">Female<input type="radio" name="gender" value="female" id="6"/></label>
+            </div>
         </div>
 
         <div class="input-group">
           <label for="input">Profile Photo :</label>
-          <input type="file" name="profile" id="7" style="border: 1px solid" />
+          <input type="file" name="profile" id="7"  />
+        </div>
+
+        <div class="input-group">
+          <label for="input">University :</label>
+          <input type="text" name="university" id="8" required placeholder="eg. GCTU"/>
+        </div>
+
+        <div class="input-group">
+        <label for="input">Level :</label>
+        <div>
+            <label style="display: flex; align-items: center;">L100<input type="radio" name="level" value="L100" id="9"/></label>
+            <label style="display: flex; align-items: center;">L200<input type="radio" name="level" value="L200" id="10"/></label>
+            <label style="display: flex; align-items: center;">L300<input type="radio" name="level" value="L300" id="11"/></label>
+            <label style="display: flex; align-items: center;">L400<input type="radio" name="level" value="L400" id="12"/></label>
+        </div>
+        </div>
+
+        <div class="input-group">
+          <label for="input">Student ID :</label>
+          <input type="number" name="studentID" id="13" required placeholder="eg. 234596869898" />
         </div>
 
         <div style="width: 35%; height: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px; place-self: end; margin-top: 5px;">
@@ -73,12 +91,14 @@
         <h3>Group Members</h3>
         <ol>
             <li>Abdul-Rasheed Said Boakye - 2425404513</li>
-            <li>Sylvanus Akakpo - </li>
-            <li>Stephanie Bih Song -</li>
-            <li>Christabel -</li>
-            <li>Blanney Justina -</li>
-            <li>Erica Mauena Horchie -</li>
+            <li>Sylvanus Akakpo - 2425404261</li>
+            <li>Stephanie Bih Song - 2425504168</li>
+            <li>Christabel Akpene Tukpeyi - 2425401404</li>
+            <li>Blanney Justina Padikwor - 2425401354</li>
+            <li>Worchie Erica Mawuena - 2425403760</li>
+            <li>Henry Brandford-Arthur Junior - 2425403364</li>
         </ol>
     </div>
+    
   </body>
 </html>
