@@ -12,6 +12,7 @@
         form { display: flex; flex-direction: column; gap: 10px; height: 100%; width: 50%; }
         input  { padding: 3px; padding-inline: 10px; background-color: #374e65; border: none; border-radius: 5px; height: 22px; }
         input::placeholder { color: #94a3b8; opacity: 1; }
+        input
         .section-title { display: flex; flex-direction: row; gap: 5px; }
         .section-title hr { flex-grow: 1; height: 1px; align-self: center; background-color: #f1f5f9; color: #f1f5f9; border: none; margin: 0; }
     </style>
@@ -36,7 +37,7 @@
 
         <div class="input-group">
           <label for="input">Age :</label>
-          <input type="number" name="age" id="2" required placeholder="eg. 18" />
+          <input type="date" name="age" id="2" required style="color: #f1f5f9;" />
         </div>
 
         <div class="input-group">
